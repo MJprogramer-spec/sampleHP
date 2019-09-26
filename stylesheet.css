@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.big-bg{
+  background-image: url(../imagegoo/cafestile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*header*/
+
+
+
+.nav-contents{
+  display: flex;
+  list-style: none;
+  font-size: 50px;
+}
+
+.nav-contents li{
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.nav-contents a, .sub-menu a{
+  color: brown;
+}
+.sub-title {
+  color: #6ea7a1;
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.logo{
+  width: 200px;
+}
+
+/*top*/
+.page-title p{
+  text-align: center;
+}
+
+
+.page-header{
+  display: flex;
+
+}
+
+.top-contents h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+.wrapper{
+  max-width: 1100px;
+  padding: 0 5%;
+}
+
+
+.nav-contents a:hover{
+  color: green;
+}
+
+/*news*/
+
+.page-title h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+.news-title , .sub-title{
+  border-bottom: 2px solid red;
+}
+
+/*menu*/
+.menu-contents{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.sub-menu a:hover{
+  color: green;
+}
+
+.menu-title{
+  width: 180px;
+}
+
+
+
+.sub-title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.sub-menu{
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.food-menu , .drink-menu , .desert-menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.menu-contents img , .drink-menu img , .desert-menu img{
+  width: 100%;
+}
+
+.menu-info h3{
+  color: black;
+  padding-top: 35px;
+}
+
+.desert-menu img{
+  height: 140px;
+  object-fit: cover;
+}
+
+
+
+
+/*food-drink-desert-menu*/
+.grid{
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#food-menu, #drink-menu, #desert-menu{
+  margin-top: 30px;
+}
+
+/*store-infomation*/
+.location-title{
+  border-bottom: 1px solid #bad4d1;
+  font-size: 24px;
+}
+
+/*page-title*/
+.page-title{
+  color: #6ea7a1;
+  font-family: serif;
+}
+
+/*footer*/
+footer{
+  background: #ff77af;
+  text-align: center;
+  height: 50px;
+}
+footer p{
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 13px;
+}
+
+
+/*responsiv*/
+@media (max-width: 600px) {
+  .page-title{
+    font-size: 2.5rem;
+  }
+
+  /*header*/
+  .nav-contents{
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  .nav-contents li{
+    margin: 0 20px;
+  }
+  .page-header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*top*/
+  .page-title p{
+    font-size: 1.5rem;
+  }
+
+  /*menu*/
+  .menu-contents{
+    flex-direction: column;
+  }
+  article,aside{
+    width: 100%;
+  }
+  article{
+    order: 2;
+  }
+  aside{
+    order: 1;
+  }
+
+  /*store*/
+  .location-map iframe{
+    width: 100%;
+  }
+
+}
